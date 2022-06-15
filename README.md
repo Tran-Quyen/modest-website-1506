@@ -8,7 +8,7 @@ This is a practice PSD to HTML/CSS
 
 #### [Giang Lâm](Link)
 
-#### [Quang Huy](Link)
+#### [Quang Huy](https://github.com/quanghuy89)
 
 #### [Quốc Huy](Link)
 
