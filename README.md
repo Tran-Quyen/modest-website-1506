@@ -12,7 +12,7 @@ This is a practice PSD to HTML/CSS
 
 #### [Quốc Huy](Link)
 
-#### [Duy Anh](Link)
+#### [Duy Anh](https://github.com/Tuong-Duy-Anh)
 
 #### [Thanh Thiệp](Link)
 
