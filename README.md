@@ -14,5 +14,5 @@ This is a practice PSD to HTML/CSS
 
 #### [Duy Anh](https://github.com/Tuong-Duy-Anh)
 
-#### [Thanh Thiệp](Link)
+#### [Thanh Thiệp](https://github.com/vothanhthiep)
 
