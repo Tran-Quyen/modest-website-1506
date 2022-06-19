@@ -73,7 +73,7 @@ header ul > li:active {
 .slider-banner {
   background-image: url(../img/slider-banner/banner-1.jpg);
   position: relative;
-  height: 500px;
+  height: 375px;
   width: 100%;
   margin-top: 81px;
   background-size: 100%;
@@ -83,7 +83,7 @@ header ul > li:active {
 .slider-banner .intro-content {
   position: absolute;
   width: 45rem;
-  top: 200px;
+  top: 10rem;
   left: 250px;
   color: #fff;
 }
@@ -126,11 +126,18 @@ header ul > li:active {
   margin-left: 0px;
 }
 
+.content {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  margin: 80px auto;
+}
+
 .info-content {
   display: flex;
-  position: absolute;
+  /* position: absolute; */
   height: 500px;
-  width: 100%;
+  /* width: 100%; */
   background-color: #fff;
 }
 
@@ -139,8 +146,8 @@ header ul > li:active {
 }
 
 .info-content .detail {
-  position: absolute;
-  width: 500px;
+  /* position: absolute; */
+  width: 45rem;
   height: 400px;
   top: 80px;
   left: 250px;
@@ -161,6 +168,7 @@ header ul > li:active {
   font-size: 2rem;
   margin: 0 1rem;
   padding-top: 0.2rem;
+  font-weight: normal;
 }
 
 .info-content .detail p {
@@ -198,21 +206,48 @@ header ul > li:active {
 }
 
 .info-content .list-info {
-  width: 30rem;
+  width: 40rem;
   height: 40rem;
-  position: absolute;
-  top: 8rem;
-  right: 6rem;
-  background-color: #23b7a4;
+  margin: 5.5rem 4rem;
 }
 
-.info-content .info-item-1 .box-number {
-  position: absolute;
-  background-color: #23b7a4;
-  font-size: 1.5rem;
+.info-content .list-info li{
+  margin: 3rem 0;
+}
+
+.info-content .list-info li:first-child {
+  margin: 0;
+}
+
+.info-content .list-info .info-item-1 {
+  display: flex;
+}
+
+.list-info .info-item-1 .box-number {
+  text-align: center;
   color: #fff;
-  width: 5rem;
-  height: 5rem;
-  top: 0;
-  left: 0;
+  font-size: 1.2rem;
+  background-color: #23b7a4;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  cursor: pointer;
+}
+
+.list-info .info-item-1 .detail-info {
+  display:flex;
+  flex-direction: column;
+  width: 30rem;
+  margin: 0 2rem;
+
+}
+
+
+.list-info .info-item-1 .title {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.list-info .info-item-1 p {
+  margin: 1rem 0;
 }
