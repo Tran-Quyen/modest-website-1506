@@ -4,6 +4,32 @@
   box-sizing: border-box;
 }
 
+/* Scoll Desgin */
+  ::-webkit-scrollbar {
+  -webkit-appearance: none; 
+}
+
+::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  /* border-right:20px solid black; */
+  border-radius: 10px;
+  background: rgb(12, 76, 98);
+  /* border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(34, 131, 211);
+}
+::-webkit-scrollbar-track {
+  background: rgb(200, 220, 159);
+}
+
+
 /* val for color */
 :root{
   --main-gray: #3a454d;
@@ -24,7 +50,6 @@ html
 
 body {
   font-size: 1.6rem;
-
 }
 
 ul {
@@ -88,7 +113,7 @@ header ul > li:active {
 .slider-banner {
   background-image: url(../img/slider-banner/banner-1.jpg);
   position: relative;
-  height: 375px;
+  height: 335px;
   width: 100%;
   margin-top: 81px;
   background-size: 100%;
@@ -142,7 +167,7 @@ header ul > li:active {
 }
 
 .content {
-  width: 900px;
+  /* width: 1000px; */
   height: 500px;
   display: flex;
   margin: 80px auto;
@@ -150,25 +175,24 @@ header ul > li:active {
 
 .info-content {
   display: flex;
-  /* position: absolute; */
-  height: 500px;
-  /* width: 100%; */
   background-color: #fff;
 }
 
-.info-content::after {
+/* .info-content::after {
   border-bottom: 2px solid #333;
-}
+} */
 
 .info-content .detail {
-  /* position: absolute; */
-  width: 45rem;
+
+  width: 65rem;
   height: 400px;
   top: 80px;
   left: 250px;
 }
 
-.info-content .detail .title-detail {
+
+
+/* .info-content .detail .title-detail {
   display: flex;
 }
 
@@ -184,10 +208,28 @@ header ul > li:active {
   margin: 0 1rem;
   padding-top: 0.2rem;
   font-weight: normal;
+} */
+
+.heading-title{
+  position: relative;
+  padding-left: 2.2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.heading-title::before{
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #4e5a62;
+  width: 1rem;
+  height: 3.7rem;
 }
 
 .info-content .detail p {
-  margin: 3rem 0;
+  margin: 1.5rem 0;
   text-align: justify;
 }
 
@@ -227,7 +269,7 @@ header ul > li:active {
 }
 
 .info-content .list-info li {
-  margin: 3rem 0;
+  margin: 5rem 0;
 }
 
 .info-content .list-info li:first-child {
@@ -259,13 +301,18 @@ header ul > li:active {
 .list-info .info-item-1 .title {
   text-transform: uppercase;
   font-weight: normal;
+  font-size: 1.6rem;
+  margin: 0;
 }
 
 .list-info .info-item-1 p {
-  margin: 1rem 0;
+  margin: 0.7rem 0;
+  font-size: 1rem;
+  opacity: 0.8;
+
 }
 
-/* re-use class */
+
 .background_gray{
   background-color: var(--main-gray);
   height: 100vh;
