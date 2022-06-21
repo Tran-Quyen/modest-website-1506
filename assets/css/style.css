@@ -34,8 +34,13 @@
 :root{
   --main-gray: #3a454d;
   --main-green: #23b7a4;
+  --font-gray: #8d8f92;
+  --font-black: #292f36;
+  --head-border-strong: #4e5a62;
+  --head-border-light: #e1e6ea;
 }
 
+/* config */
 html
 {
   font-size: 62.5%;
@@ -51,7 +56,7 @@ ul {
   list-style: none;
 }
 
-
+/* layout */
 header {
   width: 100%;
   height: 81px;
@@ -307,10 +312,15 @@ header ul > li:active {
 
 }
 
-/* Fearture */
 
 .background_gray{
   background-color: var(--main-gray);
+  height: 100vh;
+  padding-top: 10rem;
+}
+
+.background_white{
+  background-color: #fff;
   height: 100vh;
   padding-top: 10rem;
 }
@@ -319,27 +329,48 @@ header ul > li:active {
   color: #fff;
 }
 
+.gray-font{
+  color:var(--font-gray);
+}
+
+.black-font{
+  color:var(--font-black);
+}
+
+.text-wrap{
+  word-break: break-word;
+}
+
 .head-line{
   font-family: 'Quattrocento Sans', sans-serif;
   text-transform: uppercase;
-  position: relative;
+  font-weight: bold;
 }
 
-#features h1{
+.head-border{
   position: relative;
   padding-left: 2.7rem;
   margin-bottom: 6rem;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
-#features h1:before{
+.head-border:before{
   content: "";
   top: 0;
   left: 0;
   position:absolute;
-  background-color:#4e5a62 ;
+  background-color:var(--head-border-strong);
   width: 1rem;
   height: 3.5rem;
 }
+
+.background_white .head-border:before{
+  background-color: var(--head-border-light);
+}
+/* re-use class end */
 
 #features .feature.item{
   /* margin-right: 3rem; */
@@ -360,3 +391,57 @@ header ul > li:active {
 .feature .feature_decs{
   margin-bottom: 2.5rem;
 }
+
+#stay_in_touch{
+  position: relative;
+}
+
+#stay_in_touch .map-img{
+  position: absolute;
+  left: 0;
+  top: calc(10rem + 3.5rem + 6rem);
+}
+
+#stay_in_touch .content-wrapper{
+  padding-top: calc(34.6rem + 6rem - 6rem + 6rem);
+}
+
+
+#stay_in_touch .message_form{
+  min-height: 40rem;
+  max-width: 55.5rem;
+  position: absolute;
+  right: 38rem;
+  top: 37.5rem;
+  background-color: #fff;
+  padding: 3rem;
+  z-index: 999;
+}
+
+.message_form .form-label{
+  font-size: 1.4rem;
+  color:var(--font-gray);
+}
+
+.message_form .form-control{
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.message_form label[for="message"]{
+  /* margin-top: 3rem; */
+}
+
+.message_form textarea.form-control{
+  min-height: 16rem;
+}
+
+.message_form .send-btn{
+  font-size: 1.4rem;
+  padding: 1rem 1.7rem;
+  background-color: var(--main-green);
+  border: 2px solid var(--main-green);
+  border-radius: 5px;
+  /* margin-top: 3rem; */
+}
+

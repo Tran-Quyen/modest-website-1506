@@ -171,9 +171,9 @@
     <!-- Feature -->
     <div id="features" class="background_gray container-fluid white-font">
       <div class="container g-0">
-        <h1 class="head-line">Feature.</h1>
+        <h1 class="head-line head-border">Feature.</h1>
 
-        <div class="item-wrapper row g-0">
+        <div class="row g-0">
           <div class="feature item col-4 g-0">
             <img
               src="./assets/img/features/product-design.jpg"
@@ -210,5 +210,68 @@
         </div>
       </div>
     </div>
+    <!-- Feature -->
+
+    <!-- Stay in touch -->
+    <div id="stay_in_touch" class="background_white container-fluid black-font">
+      <div class="container g-0 item-wrapper">
+        <h1 class="head-line head-border black-font">Stay in touch.</h1>
+
+        <img src="./assets/img/stay-in-touch/map.jpg" alt="our location" class="map-img" />
+
+        <div class="row">
+          <div class="content-wrapper col-5 g-0">
+            <div class="contact-info head-line black-font">Contact information</div>
+            <p class="text-wrap gray-font">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec
+              dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida.
+            </p>
+            <p class="text-wrap gray-font">
+              Cras fermentum elit quis magna congue, <b>vel sodales</b> arcu vestibulum. Nunc
+              lobortis dui magna, quis dapibus lacus
+            </p>
+          </div>
+           <!-- message form -->
+          <form action="submit" class="message_form row">
+            <div class="col-6">
+              <label class="form-label head-line" for="name">Your name</label>
+              <input
+                class="form-control"
+                type="text"
+                name="name"
+                id="name"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="col-6">
+              <label class="form-label head-line" for="email">Your email</label>
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="col-12 gy-5">
+              <label class="form-label head-line" for="message">Your message</label>
+              <textarea
+                class="form-control"
+                type="text"
+                name="message"
+                id="message"
+                required
+              ></textarea>
+            </div>
+            <div class="col-5 gy-5">
+              <button class="btn btn-primary send-btn head-line">Send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Stay in touch -->
   </body>
 </html>
