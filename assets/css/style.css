@@ -5,14 +5,13 @@
 }
 
 /* Scoll Desgin */
-  ::-webkit-scrollbar {
-  -webkit-appearance: none; 
+::-webkit-scrollbar {
+  -webkit-appearance: none;
 }
 
 ::-webkit-scrollbar:vertical {
   width: 10px;
 }
-
 
 ::-webkit-scrollbar-thumb {
   /* border-right:20px solid black; */
@@ -29,9 +28,8 @@
   background: rgb(200, 220, 159);
 }
 
-
 /* val for color */
-:root{
+:root {
   --main-gray: #3a454d;
   --main-green: #23b7a4;
   --font-gray: #8d8f92;
@@ -41,8 +39,7 @@
 }
 
 /* config */
-html
-{
+html {
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
@@ -183,14 +180,11 @@ header ul > li:active {
 } */
 
 .info-content .detail {
-
   width: 65rem;
   height: 400px;
   top: 80px;
   left: 250px;
 }
-
-
 
 /* .info-content .detail .title-detail {
   display: flex;
@@ -210,15 +204,15 @@ header ul > li:active {
   font-weight: normal;
 } */
 
-.heading-title{
+.heading-title {
   position: relative;
   padding-left: 2.2rem;
   font-size: 2.5rem;
   font-weight: 700;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: "Quattrocento Sans", sans-serif;
 }
 
-.heading-title::before{
+.heading-title::before {
   content: "";
   top: 0;
   left: 0;
@@ -309,45 +303,45 @@ header ul > li:active {
   margin: 0.7rem 0;
   font-size: 1rem;
   opacity: 0.8;
-
 }
 
+/* re-use class */
 
-.background_gray{
+.background_gray {
   background-color: var(--main-gray);
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 10rem;
 }
 
-.background_white{
+.background_white {
   background-color: #fff;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 10rem;
 }
 
-.white-font{
+.white-font {
   color: #fff;
 }
 
-.gray-font{
-  color:var(--font-gray);
+.gray-font {
+  color: var(--font-gray);
 }
 
-.black-font{
-  color:var(--font-black);
+.black-font {
+  color: var(--font-black);
 }
 
-.text-wrap{
+.text-wrap {
   word-break: break-word;
 }
 
-.head-line{
-  font-family: 'Quattrocento Sans', sans-serif;
+.head-line {
+  font-family: "Quattrocento Sans", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.head-border{
+.head-border {
   position: relative;
   padding-left: 2.7rem;
   margin-bottom: 6rem;
@@ -357,91 +351,102 @@ header ul > li:active {
   justify-content: end;
 }
 
-.head-border:before{
+.head-border:before {
   content: "";
   top: 0;
   left: 0;
-  position:absolute;
-  background-color:var(--head-border-strong);
+  position: absolute;
+  background-color: var(--head-border-strong);
   width: 1rem;
   height: 3.5rem;
 }
 
-.background_white .head-border:before{
+.background_white .head-border:before {
   background-color: var(--head-border-light);
 }
 /* re-use class end */
 
-#features .feature.item{
-  /* margin-right: 3rem; */
+#features .feature.item {
   padding-right: 3rem;
 }
 
-.feature .feature_decs{
+.feature .feature_decs {
   font-size: 1.8rem;
 }
 
-.feature .feature-img{
+.feature .feature-img {
   display: block;
-  /* object-fit: contain; */
   max-width: 100%;
   margin-bottom: 5rem;
 }
 
-.feature .feature_decs{
+.feature .feature_decs {
   margin-bottom: 2.5rem;
 }
 
-#stay_in_touch{
+#contact {
   position: relative;
 }
 
-#stay_in_touch .map-img{
+#contact .item-wrapper{
+  padding-bottom: 10rem;
+}
+/* make image overflow its container */
+#contact .map-img {
   position: absolute;
   left: 0;
   top: calc(10rem + 3.5rem + 6rem);
+  width: 99.4vw;
 }
 
-#stay_in_touch .content-wrapper{
+#contact .content-wrapper {
   padding-top: calc(34.6rem + 6rem - 6rem + 6rem);
 }
 
-
-#stay_in_touch .message_form{
+#contact .message_form {
   min-height: 40rem;
   max-width: 55.5rem;
   position: absolute;
-  right: 38rem;
+  right: 33rem;
   top: 37.5rem;
   background-color: #fff;
   padding: 3rem;
   z-index: 999;
 }
 
-.message_form .form-label{
+.message_form .form-label {
   font-size: 1.4rem;
-  color:var(--font-gray);
+  color: var(--font-gray);
 }
 
-.message_form .form-control{
+.message_form .form-control {
   font-size: 1.6rem;
   padding: 1rem;
 }
 
-.message_form label[for="message"]{
-  /* margin-top: 3rem; */
-}
-
-.message_form textarea.form-control{
+.message_form textarea.form-control {
   min-height: 16rem;
 }
 
-.message_form .send-btn{
+.message_form .send-btn {
   font-size: 1.4rem;
   padding: 1rem 1.7rem;
   background-color: var(--main-green);
   border: 2px solid var(--main-green);
   border-radius: 5px;
-  /* margin-top: 3rem; */
 }
 
+.background_gray.footer {
+  min-height: 9.5rem;
+  padding-top: 0;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
