@@ -230,7 +230,7 @@
             </p>
           </div>
           <!-- message form -->
-          <form action="submit" class="message_form row">
+          <form action="submit" class="message_form row" id="mobile-form">
             <div class="col-6">
               <label class="form-label head-line" for="name">Your name</label>
               <input
@@ -268,6 +268,45 @@
             </div>
           </form>
           <!-- message form-->
+          <!-- mobile form -->
+          <form action="submit" class="message_form row">
+            <div class="col-6">
+              <label class="form-label head-line" for="name">Your name</label>
+              <input
+                class="form-control"
+                type="text"
+                name="name"
+                id="name"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="col-6">
+              <label class="form-label head-line" for="email">Your email</label>
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="col-12 gy-5">
+              <label class="form-label head-line" for="message">Your message</label>
+              <textarea
+                class="form-control"
+                type="text"
+                name="message"
+                id="message"
+                required
+              ></textarea>
+            </div>
+            <div class="col-5 gy-5">
+              <button class="btn btn-primary send-btn head-line">Send message</button>
+            </div>
+          </form>
+          <!-- mobile form -->
         </div>
       </div>
     </div>
