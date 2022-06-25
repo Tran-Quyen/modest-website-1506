@@ -402,7 +402,7 @@ header ul > li:active {
 #contact .content-wrapper {
   padding-top: calc(34.6rem + 6rem - 6rem + 6rem);
 }
-
+/* message_form */
 #contact .message_form {
   min-height: 40rem;
   max-width: 55.5rem;
@@ -435,7 +435,8 @@ header ul > li:active {
   border: 2px solid var(--main-green);
   border-radius: 5px;
 }
-
+/* message_form */
+/* footer */
 .background_gray.footer {
   min-height: 9.5rem;
   padding-top: 0;
@@ -450,7 +451,45 @@ header ul > li:active {
   justify-content: space-between;
   align-items: center;
 }
+/* footer */
 
-#mobile-form{
+/* mobile-form */
+.mobile-form{
   display: none;
+}
+
+.mobile-form .form-control{
+  font-size: 1.6rem;
+  padding: 1rem;
+
+}
+
+.mobile-form .form-label {
+  font-size: 1.4rem;
+  color: var(--font-gray);
+}
+
+
+.mobile-form textarea.form-control {
+  min-height: 16rem;
+}
+
+.mobile-form .send-btn {
+  font-size: 1.4rem;
+  padding: 1rem 1.7rem;
+  background-color: var(--main-green);
+  border: 2px solid var(--main-green);
+  border-radius: 5px;
+}
+/* mobile-form */
+
+/* Responsive */
+/* mobile-form */
+@media only screen and (max-width: 768px){
+  .mobile-form{
+    display: block;
+  }
+  .message_form{
+    display: none;
+  }
 }
