@@ -95,9 +95,7 @@
             <div class="box"></div>
             <h2>We are modest</h2>
           </div> -->
-          <div class="heading-title">
-            We are Modest
-          </div>
+          <div class="heading-title">We are Modest</div>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, modi repudiandae
             aliquid, unde dolor dolore veritatis doloremque enim ea mollitia amet repellat, suscipit
@@ -213,13 +211,13 @@
     <!-- Feature -->
 
     <!-- Stay in touch -->
-    <div id="stay_in_touch" class="background_white container-fluid black-font">
+    <div id="contact" class="background_white container-fluid black-font">
       <div class="container g-0 item-wrapper">
         <h1 class="head-line head-border black-font">Stay in touch.</h1>
 
         <img src="./assets/img/stay-in-touch/map.jpg" alt="our location" class="map-img" />
 
-        <div class="row">
+        <div class="row g-0">
           <div class="content-wrapper col-5 g-0">
             <div class="contact-info head-line black-font">Contact information</div>
             <p class="text-wrap gray-font">
@@ -231,8 +229,8 @@
               lobortis dui magna, quis dapibus lacus
             </p>
           </div>
-           <!-- message form -->
-          <form action="submit" class="message_form row">
+          <!-- message form -->
+          <form action="submit" class="message_form row" id="mobile-form">
             <div class="col-6">
               <label class="form-label head-line" for="name">Your name</label>
               <input
@@ -269,9 +267,60 @@
               <button class="btn btn-primary send-btn head-line">Send message</button>
             </div>
           </form>
+          <!-- message form-->
         </div>
+
+        <!-- mobile form -->
+        <form action="submit" class="mobile-form row">
+          <div >
+            <label class="form-label head-line" for="name">Your name</label>
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div >
+            <label class="form-label head-line" for="email">Your email</label>
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="col-12 gy-5">
+            <label class="form-label head-line" for="message">Your message</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="message"
+              id="message"
+              required
+            ></textarea>
+          </div>
+          <div class="col-5 gy-5">
+            <button class="btn btn-primary send-btn head-line">Send message</button>
+          </div>
+        </form>
+        <!-- mobile form -->
       </div>
     </div>
     <!-- Stay in touch -->
+    <!-- footer -->
+    <footer class="background_gray white-font footer">
+      <div class="container g-0">
+        <div class="copyright">© Copyright 2014 by PSD Booster. All Rights Reserved.</div>
+        <a class="" href="#">
+          <img src="./assets/img/icon-footer/scial-icon.png" alt="social-icon" />
+        </a>
+      </div>
+    </footer>
+    <!-- footer -->
   </body>
 </html>
