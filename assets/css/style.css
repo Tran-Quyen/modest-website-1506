@@ -400,6 +400,7 @@ header ul > li:active {
   position: absolute;
   left: 0;
   top: calc(10rem + 3.5rem + 6rem);
+  width: 100%;
 }
 
 #stay_in_touch .content-wrapper{
@@ -445,3 +446,30 @@ header ul > li:active {
   /* margin-top: 3rem; */
 }
 
+/* Reponsive */
+@media only screen and (max-width: 46.1875em) {
+  .list-choice{
+    display:none;
+  }
+
+  .list-info{
+    display:none;
+  }
+}
+
+/* Tablet: width >= 740px (46.25em) và width <= 1023px (63.938em)*/
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-info{
+    display:none;
+  }
+}
+
+/* PC: width >= 1024 (64em)*/
+@media only screen and (min-width: 64em) {
+  
+}
