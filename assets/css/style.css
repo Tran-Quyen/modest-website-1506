@@ -38,6 +38,10 @@
   --head-border-light: #e1e6ea;
 }
 
+.box{
+  background-clip: content-box;
+}
+
 /* config */
 html {
   font-size: 62.5%;
@@ -110,7 +114,7 @@ header ul > li:active {
 .slider-banner {
   background-image: url(../img/slider-banner/banner-1.jpg);
   position: relative;
-  height: 335px;
+  height: 66rem;
   width: 100%;
   margin-top: 81px;
   background-size: 100%;
@@ -120,7 +124,7 @@ header ul > li:active {
 .slider-banner .intro-content {
   position: absolute;
   width: 45rem;
-  top: 10rem;
+  top: 25rem;
   left: 250px;
   color: #fff;
 }
@@ -140,7 +144,7 @@ header ul > li:active {
 
 .slider-banner .intro-content .group-btn {
   display: flex;
-  margin-top: 10px;
+  margin-top: 2rem;
 }
 
 .slider-banner .intro-content .btn {
@@ -179,12 +183,12 @@ header ul > li:active {
   border-bottom: 2px solid #333;
 } */
 
-.info-content .detail {
+/* .info-content .detail {
   width: 65rem;
   height: 400px;
   top: 80px;
   left: 250px;
-}
+} */
 
 /* .info-content .detail .title-detail {
   display: flex;
@@ -203,12 +207,16 @@ header ul > li:active {
   padding-top: 0.2rem;
   font-weight: normal;
 } */
-
+#content .section-content{
+  height:61.1rem;
+  padding: 2rem 0rem;
+}
 .heading-title {
   position: relative;
   padding-left: 2.2rem;
   font-size: 2.5rem;
   font-weight: 700;
+  margin:3rem 0rem;
   font-family: "Quattrocento Sans", sans-serif;
 }
 
@@ -217,29 +225,31 @@ header ul > li:active {
   top: 0;
   left: 0;
   position: absolute;
-  background-color: #4e5a62;
+  background-color: #e1e6ea;
   width: 1rem;
   height: 3.7rem;
 }
 
-.info-content .detail p {
-  margin: 1.5rem 0;
+.detail p {
+  /* margin: 1.5rem 0; */
   text-align: justify;
 }
 
-.info-content .detail .list-icon ul {
+.list-icon{
+  margin-top: 3rem;
+}
+
+.detail .list-icon ul {
   position: absolute;
   display: flex;
   padding: 0px;
 }
-
-.info-content .list-icon li {
+.list-icon li {
   display: flex;
   width: 6rem;
   height: 6rem;
   font-size: 1.6rem;
   color: #fff;
-  /* padding-top:2rem; */
   background-color: #c8cdd0;
   justify-content: center;
   align-items: center;
@@ -247,31 +257,27 @@ header ul > li:active {
   margin-left: 2px;
 }
 
-.info-content .list-icon li:hover {
+.list-icon li:hover {
   opacity: 0.6;
   transition: all 0.7s;
 }
 
-.info-content .list-icon li:first-child {
+.list-icon li:first-child {
   padding-left: 0px;
 }
 
-.info-content .list-info {
-  width: 40rem;
-  height: 40rem;
-  margin: 5.5rem 4rem;
-}
-
-.info-content .list-info li {
-  margin: 5rem 0;
+.list-info {
+  /* width: 40rem;
+  height: 40rem; */
 }
 
 .info-content .list-info li:first-child {
   margin: 0;
 }
 
-.info-content .list-info .info-item-1 {
+.list-info .info-item-1 {
   display: flex;
+  margin-bottom:4rem;
 }
 
 .list-info .info-item-1 .box-number {
@@ -288,14 +294,14 @@ header ul > li:active {
 .list-info .info-item-1 .detail-info {
   display: flex;
   flex-direction: column;
-  width: 30rem;
+  
   margin: 0 2rem;
 }
 
 .list-info .info-item-1 .title {
   text-transform: uppercase;
   font-weight: normal;
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -303,6 +309,7 @@ header ul > li:active {
   margin: 0.7rem 0;
   font-size: 1rem;
   opacity: 0.8;
+  width: 40rem;
 }
 
 /* re-use class */
