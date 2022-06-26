@@ -139,8 +139,8 @@ header ul > li:active {
 .carousel.slider-banner .intro-content {
   position: absolute;
   width: 45rem;
-  top: 20rem;
-  left: 250px;
+  top: 25%;
+  left: 10%;
   color: #fff;
 }
 
