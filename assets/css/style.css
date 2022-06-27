@@ -139,8 +139,8 @@ header ul > li:active {
 .carousel.slider-banner .intro-content {
   position: absolute;
   width: 45rem;
-  top: 25%;
-  left: 10%;
+  top: 35%;
+  left: 20%;
   color: #fff;
 }
 
@@ -194,6 +194,13 @@ header ul > li:active {
   width: 0.8rem;
   height: 0.8rem;
 }
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next
+{
+  /* display: none; */
+}
+
 
 /* Content */
 
