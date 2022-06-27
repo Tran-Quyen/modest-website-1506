@@ -492,11 +492,29 @@ header ul > li:active {
 
 /* Responsive */
 /* mobile-form */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .mobile-form {
     display: block;
   }
   .message_form {
     display: none;
   }
+  /* feature */
+  .head-border{
+    margin-bottom: 3rem;
+  }
+  .feature .feature-img{
+    margin-bottom: 0;
+  }
+  .feature .feature_decs{
+    margin-bottom: 0;
+  }
+  .feature.item{
+    margin-bottom: 3rem;
+  }
+  /* feature */
+}
+
+@media only screen and (min-width: 768px) {
+
 }
