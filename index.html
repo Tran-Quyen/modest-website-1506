@@ -279,13 +279,17 @@
 
     <!-- Stay in touch -->
     <div id="contact" class="background_white container-fluid black-font">
-      <div class="container g-0 item-wrapper">
+      <div class="container g-0">
         <h1 class="head-line head-border black-font">Stay in touch.</h1>
+      </div>
 
-        <img src="./assets/img/stay-in-touch/map.jpg" alt="our location" class="map-img" />
+      <!-- map -->
+      <img src="./assets/img/stay-in-touch/map.jpg" alt="our location" class="map-img" />
+      <!-- map -->
 
+      <div class="container g-0 item-wrapper">
         <div class="row g-0">
-          <div class="content-wrapper col-5 g-0">
+          <div class="content-wrapper col-12 col-lg-5 g-0">
             <div class="contact-info head-line black-font">Contact information</div>
             <p class="text-wrap gray-font">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec
@@ -296,47 +300,7 @@
               lobortis dui magna, quis dapibus lacus
             </p>
           </div>
-          <!-- message form -->
-          <form action="submit" class="message_form row" id="mobile-form">
-            <div class="col-6">
-              <label class="form-label head-line" for="name">Your name</label>
-              <input
-                class="form-control"
-                type="text"
-                name="name"
-                id="name"
-                autocomplete="off"
-                required
-              />
-            </div>
-            <div class="col-6">
-              <label class="form-label head-line" for="email">Your email</label>
-              <input
-                class="form-control"
-                type="email"
-                name="email"
-                id="email"
-                autocomplete="off"
-                required
-              />
-            </div>
-            <div class="col-12 gy-5">
-              <label class="form-label head-line" for="message">Your message</label>
-              <textarea
-                class="form-control"
-                type="text"
-                name="message"
-                id="message"
-                required
-              ></textarea>
-            </div>
-            <div class="col-5 gy-5">
-              <button class="btn btn-primary send-btn head-line">Send message</button>
-            </div>
-          </form>
-          <!-- message form-->
         </div>
-
         <!-- mobile form -->
         <form action="submit" class="mobile-form row">
           <div>
@@ -377,6 +341,46 @@
         </form>
         <!-- mobile form -->
       </div>
+
+      <!-- message form -->
+      <form action="submit" class="message_form row">
+        <div class="col-6">
+          <label class="form-label head-line" for="name">Your name</label>
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            id="name"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="col-6">
+          <label class="form-label head-line" for="email">Your email</label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="col-12 gy-5">
+          <label class="form-label head-line" for="message">Your message</label>
+          <textarea
+            class="form-control"
+            type="text"
+            name="message"
+            id="message"
+            required
+          ></textarea>
+        </div>
+        <div class="col-5 gy-5">
+          <button class="btn btn-primary send-btn head-line">Send message</button>
+        </div>
+      </form>
+      <!-- message form-->
     </div>
     <!-- Stay in touch -->
     <!-- footer -->
