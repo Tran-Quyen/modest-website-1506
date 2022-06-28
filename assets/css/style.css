@@ -45,7 +45,7 @@
 /* config */
 html {
   font-size: 62.5%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5;
 }
 
@@ -149,7 +149,6 @@ header ul > li:active {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  
 }
 
 .slider-banner .intro-content p {
@@ -196,11 +195,9 @@ header ul > li:active {
 }
 
 .carousel .carousel-control-prev,
-.carousel .carousel-control-next
-{
+.carousel .carousel-control-next {
   /* display: none; */
 }
-
 
 /* Content */
 
@@ -225,12 +222,12 @@ header ul > li:active {
   font-size: 2.5rem;
   font-weight: 700;
   margin: 3rem 0rem;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: "Quattrocento Sans", sans-serif;
   text-transform: uppercase;
 }
 
 .heading-title::before {
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   position: absolute;
@@ -352,7 +349,7 @@ header ul > li:active {
 }
 
 .head-line {
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: "Quattrocento Sans", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -368,7 +365,7 @@ header ul > li:active {
 }
 
 .head-border:before {
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   position: absolute;
@@ -402,29 +399,29 @@ header ul > li:active {
 
 #contact {
   position: relative;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #contact .item-wrapper {
   padding-bottom: 10rem;
+  margin-top: 6rem;
 }
 /* make image overflow its container */
 #contact .map-img {
-  position: absolute;
-  left: 0;
-  top: calc(10rem + 3.5rem + 6rem);
-  width: 99.4vw;
+  /* position: absolute; */
+  /* left: 0;
+  top: calc(10rem + 3.5rem + 6rem); */
+  width: 100%;
 }
 
-#contact .content-wrapper {
-  padding-top: calc(34.6rem + 6rem - 6rem + 6rem);
-}
 /* message_form */
 #contact .message_form {
-  min-height: 40rem;
-  max-width: 55.5rem;
+  height: 50%;
+  width: 33.33%;
   position: absolute;
-  right: 33rem;
-  top: 37.5rem;
+  left: 50%;
+  top: 40%;
   background-color: #fff;
   padding: 3rem;
   z-index: 999;
@@ -498,30 +495,41 @@ header ul > li:active {
 /* mobile-form */
 
 /* Responsive */
-/* mobile-form */
-@media only screen and (max-width: 767px) {
+
+/* mobile width <=739px (46.1875em) */
+@media only screen and (max-width: 46.1875em) {
   .mobile-form {
     display: block;
   }
   .message_form {
     display: none;
   }
+
+  #contact .item-wrapper {
+    padding: 0 1rem 2rem 1rem;
+  }
+
   /* feature */
-  .head-border{
+  .head-border {
     margin-bottom: 3rem;
   }
-  .feature .feature-img{
+  .feature .feature-img {
     margin-bottom: 0;
   }
-  .feature .feature_decs{
+  .feature .feature_decs {
     margin-bottom: 0;
   }
-  .feature.item{
+  .feature.item {
     margin-bottom: 3rem;
   }
   /* feature */
 }
-
-@media only screen and (min-width: 768px) {
-
+/* Tablet: width >= 740px (46.25em) và width <= 1023px (63.938em) */
+@media only screen and (min-width: 46.25em) and (max-width: 63.938em) {
+  .mobile-form {
+    display: block;
+  }
+  .message_form {
+    display: none;
+  }
 }
