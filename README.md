@@ -8,11 +8,11 @@ This is a practice PSD to HTML/CSS
 
 #### [Giang Lâm](Link)
 
-#### [Quang Huy](Link)
+#### [Quang Huy](https://github.com/quanghuy89)
 
 #### [Quốc Huy](Link)
 
-#### [Duy Anh](Link)
+#### [Duy Anh](https://github.com/Tuong-Duy-Anh)
 
-#### [Thanh Thiệp](Link)
+#### [Thanh Thiệp](https://github.com/vothanhthiep)
 
