@@ -166,6 +166,10 @@ header .menu-btn:hover {
   background-repeat: no-repeat;
 }
 
+.carousel.slider-banner .carousel-inner{
+  height:40rem;
+  background-size: contain;
+}
 .carousel.slider-banner .intro-content {
   position: absolute;
   width: 45rem;
@@ -331,7 +335,7 @@ header .menu-btn:hover {
 .list-info .info-item-1 .detail-info {
   display: flex;
   flex-direction: column;
-
+  text-align: initial;
   margin: 0 2rem;
 }
 
