@@ -83,6 +83,9 @@
 /* BS break point */
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .carousel.slider-banner .carousel-inner{
+    height:20rem;
+  }
 
   header .menu-btn:active{
     background-color: #fff;
