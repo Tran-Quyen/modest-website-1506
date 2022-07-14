@@ -522,19 +522,20 @@ header ul > li:active {
   }
 }
 /* BS break point */
-@media only screen and (max-width: 767px){
-    /* feature */
-    .head-border {
-      margin-bottom: 3rem;
-    }
-    .feature .feature-img {
-      margin-bottom: 0.5rem;
-    }
-    .feature .feature_decs {
-      margin-bottom: 0;
-    }
-    .feature.item {
-      margin-bottom: 3rem;
-    }
-    /* feature */
+@media only screen and (max-width: 767px) {
+  /* feature */
+  .head-border {
+    margin-bottom: 3rem;
+  }
+  .feature .feature-img {
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  .feature .featre_decs {
+    margin-bottom: 0;
+  }
+  .feature.item {
+    margin-bottom: 3rem;
+  }
+  /* feature */
 }
