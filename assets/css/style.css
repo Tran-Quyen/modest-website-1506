@@ -577,6 +577,7 @@ header .menu-btn:hover {
   }
   .feature .feature-img {
     margin-bottom: 0.5rem;
+    width: 100%;
   }
   .feature .feature_decs {
     margin-bottom: 0;
