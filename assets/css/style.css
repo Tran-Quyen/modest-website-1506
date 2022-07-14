@@ -250,6 +250,19 @@ header .menu-btn:hover {
   height: 61.1rem;
   padding: 2rem 0rem;
 }
+
+#content .row.content-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .list-info{
+  padding: 0 2rem;
+} */
+
+.list-info ul{
+  padding-left: 0;
+}
 .heading-title {
   position: relative;
   padding-left: 2.2rem;

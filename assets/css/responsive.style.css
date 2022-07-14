@@ -1,3 +1,13 @@
+/* PC: >= 1024px or 64 em */
+@media only screen and (min-width:64em){
+  
+  .col-lg-6.list-col-2{
+    padding-left: 4rem;
+  }
+}
+
+
+
 /* Tablet: width >= 740px (46.25em) và width <= 1023px (63.938em) */
 
 @media only screen and (min-width:767px) and (max-width: 63.938em) {
@@ -31,7 +41,7 @@
     transform: translateX(0%);
   }
 
-  header .nav-lists > li {
+  .nav-lists > li {
     display: flex;
     /* display:none; */
     font-size: 1.6rem;
@@ -50,6 +60,11 @@
   header .menu-btn:active{
     background-color: #fff;
     color: #000;
+  }
+
+  .nav-lists > li a{
+    width:100%;
+    height:100%;
   }
 
   /* Slider */
@@ -134,6 +149,11 @@
 
   .nav-lists > li a {
     text-decoration:none;
+  }
+
+  .nav-lists > li a{
+    width:100%;
+    height:100%;
   }
 
   header ul > li:hover {
