@@ -45,7 +45,7 @@
 /* config */
 html {
   font-size: 62.5%;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
 }
 
@@ -60,7 +60,7 @@ ul {
 /* layout */
 header {
   width: 100%;
-  height: 81px;
+  height: 8.1rem;
   background-color: #1d2126;
   position: fixed;
   z-index: 2;
@@ -80,13 +80,10 @@ header .modest-icon {
   width: 99px;
   height: 19px;
   cursor: pointer; */
+  padding: 0 3rem;
 }
 
-header .list-choice {
-  margin-left: 4rem;
-}
-
-header .list-choice ul {
+header .nav-lists {
   /* position: absolute; */
   display: flex;
   color: #fff;
@@ -98,28 +95,61 @@ header .list-choice ul {
   padding-left: 0;
   /* margin-left: 4rem; */
 }
-
-header ul > li {
-  margin: 0 0.5rem;
-  padding: 1rem 1rem;
+ul >li{
+  display:inline-block;
+  text-align: center;
+}
+ .nav-lists >li  a {
+  display: flex;
+  height:40px;;
+  width:100px;
+  /* margin: 0 0.5rem; */
+  /* padding: 1rem 1rem; */
   text-transform: uppercase;
   cursor: pointer;
   color: #808889;
   border: 2px solid transparent;
+  cursor: pointer;
+  justify-content:center;
+  align-items:center;
 }
 
-header ul > li:hover {
+.nav-lists > li a:hover {
   border: 2px solid #23b7a4;
   color: #23b7a4;
   border-radius: 5px;
   transition: all 0.5s;
 }
 
-header ul > li:active {
+ul > li a:active {
   border: 2px solid #808889;
   color: #808889;
   border-radius: 5px;
   opacity: 0.8;
+}
+
+.nav-lists > li a {
+  text-decoration:none;
+  color:#808889;
+}
+
+header .menu-btn {
+  display: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  /* height:8.1rem;
+  width: */
+  padding: 2.6rem 3rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+header .menu-btn:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .carousel {
@@ -136,6 +166,10 @@ header ul > li:active {
   background-repeat: no-repeat;
 }
 
+.carousel.slider-banner .carousel-inner{
+  height:40rem;
+  background-size: contain;
+}
 .carousel.slider-banner .intro-content {
   position: absolute;
   width: 45rem;
@@ -222,12 +256,12 @@ header ul > li:active {
   font-size: 2.5rem;
   font-weight: 700;
   margin: 3rem 0rem;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: 'Quattrocento Sans', sans-serif;
   text-transform: uppercase;
 }
 
 .heading-title::before {
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   position: absolute;
@@ -245,8 +279,8 @@ header ul > li:active {
   margin-top: 3rem;
 }
 
-.detail .list-icon ul {
-  position: absolute;
+.list-icon ul {
+  /* position: absolute; */
   display: flex;
   padding: 0px;
 }
@@ -289,18 +323,19 @@ header ul > li:active {
 .list-info .info-item-1 .box-number {
   text-align: center;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   background-color: #23b7a4;
   width: 4rem;
   height: 4rem;
-  line-height: 4rem;
+  line-height: 2rem;
   cursor: pointer;
+  padding: 1rem;
 }
 
 .list-info .info-item-1 .detail-info {
   display: flex;
   flex-direction: column;
-
+  text-align: initial;
   margin: 0 2rem;
 }
 
@@ -349,7 +384,7 @@ header ul > li:active {
 }
 
 .head-line {
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: 'Quattrocento Sans', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -365,7 +400,7 @@ header ul > li:active {
 }
 
 .head-border:before {
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   position: absolute;
@@ -531,7 +566,7 @@ header ul > li:active {
     margin-bottom: 0.5rem;
     width: 100%;
   }
-  .feature .featre_decs {
+  .feature .feature_decs {
     margin-bottom: 0;
   }
   .feature.item {

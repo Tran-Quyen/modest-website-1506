@@ -1,0 +1,232 @@
+/* Tablet: width >= 740px (46.25em) và width <= 1023px (63.938em) */
+
+@media only screen and (min-width:767px) and (max-width: 63.938em) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .menu-btn {
+    display: block;
+    font-size: 2rem;
+  }
+
+  header .nav-lists {
+    display: block;
+    position: absolute;
+    top: 8.1rem;
+    right: 0;
+    width: 40%;
+    background-color: #343b43;
+    display: flex;
+    height: calc(100vh - 8.1rem);
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in;
+    transform: translateX(100%);
+  }
+  
+  ul.nav-lists.active-slider {
+    transform: translateX(0%);
+  }
+
+  header .nav-lists > li {
+    display: flex;
+    /* display:none; */
+    font-size: 1.6rem;
+    width: 100%;
+    /* text-align:center; */
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    height: calc(100% / 6);
+  }
+
+  header ul > li:hover {
+    background-color: #fff;
+  }
+
+  header .menu-btn:active{
+    background-color: #fff;
+    color: #000;
+  }
+
+  /* Slider */
+  .carousel-indicators {
+    display: none;
+  }
+
+  .content-section {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #content .section-content {
+    height: auto;
+  }
+
+  .list-icon {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+  }
+
+  .list-info ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* BS break point */
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .carousel.slider-banner .carousel-inner{
+    height:20rem;
+  }
+
+  header .menu-btn:active{
+    background-color: #fff;
+    color: #000;
+  }
+  header .menu-btn {
+    display: block;
+    padding: 2.85rem 3rem;
+  }
+
+  header .nav-lists {
+    display: none;
+  }
+
+  header .nav-lists {
+    display: block;
+    position: absolute;
+    top: 8.1rem;
+    right: 0;
+    width: 40%;
+    background-color: #343b43;
+    display: flex;
+    height: calc(100vh - 8.1rem);
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in;
+    transform: translateX(100%);
+  }
+  
+  ul.nav-lists.active-slider {
+    transform: translateX(0%);
+  }
+
+  header .nav-lists > li {
+    display: flex;
+    /* display:none; */
+    font-size: 1.6rem;
+    width: 100%;
+    /* text-align:center; */
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    height: calc(100% / 6);
+  }
+
+  .nav-lists > li a {
+    text-decoration:none;
+  }
+
+  header ul > li:hover {
+    background-color: #fff;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  .carousel.slider-banner .intro-content{
+    display:none;
+  }
+
+  .slider-banner .intro-content h2{
+    font-size: 1rem;
+  }
+  
+  .slider-banner .intro-content .group-btn{
+    margin-top: 0;
+  }
+
+  .carousel.slider-banner .intro-content {
+   text-align: center;
+    width:auto;
+  }
+
+  .carousel.slider-banner .intro-content p{
+    display:none;
+  }
+
+  .slider-banner .intro-content p {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+  }
+
+  #content .section-content {
+    height: auto;
+  }
+
+  .detail p{
+    padding:2rem;
+  }
+
+  .list-icon {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 1rem;
+  }
+
+  .list-info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .list-icon ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+
+  .list-icon li{
+    margin-top: 2px;
+  }
+
+  .list-info .info-item-1 {
+    flex-direction: row;
+    padding : 0 4rem;
+  }
+
+  .list-info .info-item-1 .box-number {
+    margin: 1rem;
+  }
+
+  .list-info .info-item-1 .detail-info {
+    margin:1rem;
+    display: flex;
+  }
+
+  .list-info .info-item-1 p {
+    width: 100%;
+    text-align: justify;
+  }
+
+  @keyframes navLinkFade {
+    form{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity :1;
+       transform: translateX(0px);
+    }
+  }
+}
