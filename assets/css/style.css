@@ -169,6 +169,8 @@ header .menu-btn:hover {
 .carousel.slider-banner .carousel-inner{
   height:40rem;
   background-size: contain;
+  background-position: 10% 10%;
+  min-height: 55rem;
 }
 .carousel.slider-banner .intro-content {
   position: absolute;
