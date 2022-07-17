@@ -96,7 +96,8 @@
 /* Mobile */
 @media only screen and (max-width: 767px) {
   .carousel.slider-banner .carousel-inner {
-    height: 20rem;
+    min-height: 0;
+    height:30rem;
   }
 
   header .menu-btn:active {
@@ -160,7 +161,9 @@
   }
 
   .carousel.slider-banner .intro-content {
-    display: none;
+    top:20%;
+    left: 20%;
+
   }
 
   .slider-banner .intro-content h2 {
