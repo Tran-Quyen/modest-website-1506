@@ -489,6 +489,7 @@ header .menu-btn:hover {
 
 .message_form textarea.form-control {
   min-height: 16rem;
+  resize: none;
 }
 
 .message_form .send-btn {
@@ -509,7 +510,7 @@ header .menu-btn:hover {
   display: flex;
 }
 
-.footer .container {
+.footer .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -552,24 +553,48 @@ header .menu-btn:hover {
   .mobile-form {
     display: block;
   }
+  .mobile-form .send-btn{
+    width: 100%;
+  }
+  .mobile-form div.col-5{
+    width: 100%;
+  }
+  .mobile-form #message{
+    resize: none;
+  }
+
   .message_form {
     display: none;
   }
-
+  #features .feature.item{
+    padding-right: 0;
+  }
   #contact .item-wrapper {
     padding: 0 1rem 2rem 1rem;
+  }
+  .footer .container{
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
 /* Tablet: width >= 740px (46.25em) và width <= 1023px (63.938em) */
 
-@media only screen and (min-width: 46.25em) and (max-width: 63.938em) {
+@media only screen and (min-width: 46.25em) and (max-width: 64em) {
   .mobile-form {
     display: block;
+  }
+  .mobile-form #message{
+    resize: none;
   }
   .message_form {
     display: none;
   }
+  .footer .container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  
 }
 /* BS break point */
 @media only screen and (max-width: 767px) {
