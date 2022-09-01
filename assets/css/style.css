@@ -168,10 +168,15 @@ header .menu-btn:hover {
 
 .carousel.slider-banner .carousel-inner{
   height:40rem;
-  background-size: contain;
-  background-position: 10% 10%;
+  background-size: auto;
+  background-position: 0% 50%;
   min-height: 55rem;
 }
+
+.carousel.slider-banner .carousel-inner .carousel-item{
+  background-position: 0 50%;
+}
+
 .carousel.slider-banner .intro-content {
   position: absolute;
   width: 45rem;
@@ -191,6 +196,8 @@ header .menu-btn:hover {
   text-align: justify;
   font-size: 1rem;
   color: rgb(204, 208, 215);
+  font-size: 1.6rem;
+  text-shadow: 0.4rem 0.4rem gray;
 }
 
 .slider-banner .intro-content .group-btn {
@@ -250,7 +257,7 @@ header .menu-btn:hover {
 
 #content .section-content {
   height: 61.1rem;
-  padding: 2rem 0rem;
+  padding: 2rem 1rem;
 }
 
 #content .row.content-section {
@@ -363,7 +370,7 @@ header .menu-btn:hover {
 
 .list-info .info-item-1 p {
   margin: 0.7rem 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   opacity: 0.8;
   width: 40rem;
 }
