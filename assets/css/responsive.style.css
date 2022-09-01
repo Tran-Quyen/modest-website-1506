@@ -220,7 +220,7 @@
 
   .list-info .info-item-1 {
     flex-direction: row;
-    padding: 0 4rem;
+    padding: 0 1.6rem;
   }
 
   .list-info .info-item-1 .box-number {
@@ -235,6 +235,10 @@
   .list-info .info-item-1 p {
     width: 100%;
     text-align: justify;
+  }
+
+  .list-info .info-item-1 .title{
+    font-size: 1.6rem;
   }
 
   @keyframes navLinkFade {
